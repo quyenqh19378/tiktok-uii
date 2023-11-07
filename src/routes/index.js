@@ -12,9 +12,9 @@ import Upload from '~/pages/Upload';
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/following', component: Following },
-    { path: '/Profile', component: Profile },
-    { path: '/Search', component: Search, layout: null },
-    { path: '/Upload', component: Upload, layout: HeaderOnly },
+    { path: '/:nickname', component: Profile },
+    { path: '/search', component: Search, layout: null },
+    { path: '/upload', component: Upload, layout: HeaderOnly },
 ];
 
 const privateRoutes = [];
